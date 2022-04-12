@@ -5,13 +5,11 @@
 
 <h1>Player Name</h1>
 
-<label>Name: </label>
-<input type='text' @bind=newPlayerName>
+<label for="name">Name: </label>
+<input type='text' name="name" @bind=newPlayerName>
 @* <button @onclick="makePlayerName">Make Player Name</button> *@
 
-<h1>Players</h1>
-<input @onchange=filterChanged>
-@if (final.PlayerID.Count() == 0)
+@code
 {
-    <p>No players in list.</p>
+    string newPlayerName;
 }
