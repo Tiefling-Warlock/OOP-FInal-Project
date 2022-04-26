@@ -6,10 +6,13 @@
 <h1>Player Name</h1>
 
 <label for="name">Name: </label>
-<input type='text' name="name" @bind=newPlayerName>
-@* <button @onclick="makePlayerName">Make Player Name</button> *@
+<input type='text' name="name">
+<label for="score">Score: </label>
+<input type='text' name="score">
+
 
 @code
 {
-    string newPlayerName;
+    public class Scores{}
+
 }
